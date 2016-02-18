@@ -1,3 +1,0 @@
-git add IME DATOTEKE
-git commit -m "komentar"
-git git push -u origin master
