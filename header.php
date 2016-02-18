@@ -56,9 +56,10 @@
                                             else {
                                                 
                                                 echo '<li><a href="logout.php">Odjava ('.
-                                                        $_SESSION['first_name'].' )</a></li>';
+                                                        $_SESSION['first_name'].')</a></li>';
+                                                if($_SESSION['admin'] == 1) { echo "<b style='color:red'>ADMIN</b>"; }
                                             }
-                                        ?>
+                                        ?> 
 					                                   
 										
 				</ul>

@@ -17,12 +17,15 @@ $result = mysqli_query($link, $query);
 <div id="destinations"> 
 
 <?php
+    
 while ($row = mysqli_fetch_array($result)) {
     echo '<div class="destination">';
         echo '<div class="destination_modify">';
+        if ($_SESSION['admin'] == 1) {
             echo '<a href="destination_delete.php?id='.$row['did'].'" 
                 onclick="return confirm(\'Ste prepričani?\')">Izbriši</a>';
             echo ' <a href="destination_edit.php?id='.$row['did'].'">Uredi</a>';
+        }
         echo '</div>';
         echo '<a href="destination.php?id='.$row['did'].'">';
         $query = "SELECT * 
