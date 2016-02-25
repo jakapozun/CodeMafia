@@ -17,6 +17,9 @@
     $result = mysqli_query($link, $query);
     $destination = mysqli_fetch_array($result);
 ?>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<button type="button" style="width:30%;height:40%;font-size:30px;" class="btn btn-success">PRIJAVI SE</button>
 <h2><?php echo $destination['title'];?> 
     <div class="ocena">
         <a href="rate.php?id=<?php echo $id; ?>&rate=1">
