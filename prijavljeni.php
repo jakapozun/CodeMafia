@@ -5,7 +5,7 @@ include_once 'header.php';
 
 <table>
     <tr>
-        <td><a href="bled.html">BLED</a></td>
+        <td><a href="bled.php">BLED</a></td>
         <td>VELENJE</td>
         <td>PIRAN</td>
     </tr>
