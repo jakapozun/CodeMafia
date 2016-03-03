@@ -14,7 +14,7 @@
     $result = mysqli_query($link, $query);
     //preverimo, če tak obstaja v bazi
     if (mysqli_num_rows($result)) {
-        $_SESSION['error'] = "Ne spamaj";
+        $_SESSION['error'] = "NE SPAMAJ!";
         header("Location: destination.php?id=$destination_id");
         die();
     } 

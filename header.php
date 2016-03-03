@@ -57,7 +57,7 @@
                                                 
                                                 echo '<li><a href="logout.php">Odjava ('.
                                                         $_SESSION['first_name'].')</a></li>';
-                                                if($_SESSION['admin'] == 1) { echo "<a  style='text-decoration:none' href='prijavljeni.html'><b style='color:red;'>ADMIN</b></a>"; }
+                                                if($_SESSION['admin'] == 1) { echo "<a  style='text-decoration:none' href='prijavljeni.php'><b style='color:red;'>ADMIN</b></a>"; }
                                             }
                                         ?> 
 					                                   
