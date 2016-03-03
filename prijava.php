@@ -1,5 +1,6 @@
 <?php
     include_once 'session.php';
+    include_once 'database.php';
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -126,13 +127,24 @@
 
 
 
-<form action="bled.php" method="post">
+<form  method="post">
     IME:<input type="text" name="ime" />
     PRIIMEK:<input type="text" name="priimek" />
     E-MAIL:<input type="text" name="email" /><br />
     <input type="submit" value="PRIJAVI SE" />
 </form>
-
+<?php 
+                                        
+                                        $ime = $_POST['ime'];
+                                        $priimek = $_POST['priimek'];
+                                        $email = $_POST['email'];
+                                        
+    $query = "INSERT INTO prijavljeni(ime,priimek,email)
+                VALUES('$ime','$priimek','$email')";                                  
+                                      
+    mysqli_query($link, $query);
+                                        ?>
+                                    
 <?php
     include_once 'footer.php';
     ?>
