@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
+<?php 
 
-<title>test123</title>
+$ime = $_POST['ime'];
+$priimek = $_POST['priimek'];
+$email = $_POST['email'];
 
-</head>
-<body>
+echo "IME: " . $ime . "<br />";
+echo "PRIIMEK: " . $priimek . "<br />";
+echo "E-MAIL " . $email . "<br /";
 
-<?php
-
-    
-  
 ?>
-
-
-</body>
-</html>
