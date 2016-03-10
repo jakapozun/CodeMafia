@@ -1,5 +1,6 @@
 <?php
     include_once 'session.php';
+    include_once 'database.php';
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -108,7 +109,7 @@
 
 							<!-- Features -->
 								<section class="box features">
-									<h2  class="major"><span>Destinacije</span></h2>
+									<h2  class="major"><span>PRIJAVLJENI UPORABNIKI</span></h2>
 									<div>
                                                                             <?php 
                                                                                 //preverimo za error
@@ -125,4 +126,36 @@
                                                                                     echo '</div>';
                                                                                     unset($_SESSION['success']);
                                                                                 }
-                                                                            ?>
+                                        
+                                        if(isset($_GET['id']) && $_SESSION['user_id']) {
+                                            $id = $_GET['id'];
+                                            $sql = "SELECT DISTINCT u.first_name, u.last_name, d.title FROM users u INNER JOIN prijavljeni p ON u.id = p.user_id INNER JOIN destinations d ON d.id = p.destination_id WHERE p.destination_id = '". $id . "';";
+                                            $result = mysqli_query($link, $sql);
+                                            echo "<table><th><b>Ime</b></th><th><b>Priimek</b></th>";
+                                            while ($row = mysqli_fetch_array($result)) {
+                                                echo "<tr>";
+                                                echo "<td>" . $row['first_name'] . "</td><td>" . $row['last_name'] . "</td>";
+                                                echo "</tr>";
+                                            }
+                                            echo "</table>"; 
+                                        }
+                                                                     ?>
+                                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+include_once 'footer.php';
+?>

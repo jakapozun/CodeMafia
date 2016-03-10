@@ -106,17 +106,8 @@
 				<div class="row 200%">
 					<div class="12u">
 
-						<!-- About -->
-							<section>
-								<h2 class="major"><span>What's this about?</span></h2>
-								<p>
-									This is <strong>TXT</strong>, yet another free responsive site template designed by
-									<a href="http://n33.co">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
-									<a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
-									whatever you're working on (personal or commercial), just be sure to give us credit for the design.
-									That's basically it :)
-								</p>
-							</section>
+						
+							
 
 					</div>
 				</div>
@@ -125,7 +116,7 @@
 
 						<!-- Contact -->
 							<section>
-								<h2 class="major"><span>Get in touch</span></h2>
+								<h2 class="major"><span>Get in touch with us</span></h2>
 								<ul class="contact">
 									<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
 									<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
@@ -141,7 +132,7 @@
 				<!-- Copyright -->
 					<div id="copyright">
 						<ul class="menu">
-							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Turistika. All rights reserved</li><li>Designed by: Code Mafia</li>
 						</ul>
 					</div>
 
