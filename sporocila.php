@@ -1,18 +1,27 @@
 <?php 
 include_once 'header.php';
+include_once 'database.php';
+
 ?>
+<?php
+$sql = "SELECT  u.first_name, u.last_name FROM users u ";
+$result = mysqli_query($link, $sql);
+?>                                           
+<form action="send.php" method="post">
+   <?php 
+    echo "<select name='uporabnik'>";
+    while ($row = mysqli_fetch_array($result)) {
+        echo "<option name=$id>" . $row['first_name'] . " " . $row['last_name'] . "</option>";
+    }
+    echo "</select>";
 
-<form action="MAILTO:mplankelj@gmail.coom" method="post" enctype="text/plain">
-Ime:<br>
-<input type="text" name="name" ><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Sporočilo:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
+    ?>
+    ZADEVA: <input type="text" name="zadeva" /><br />
+    <textarea style="resize:none" name="vsebina"  rows="5" cols="10" placeholder="Vpiši besedilo...">
+        
+    </textarea>
+    <input type="submit" value="POŠLJI" name="submit" />
 </form>
-
 
 <?php
 include_once 'footer.php';
