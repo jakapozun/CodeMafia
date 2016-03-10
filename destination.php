@@ -18,10 +18,20 @@
     $destination = mysqli_fetch_array($result);
 ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<form  action="prijava.php" method="post">
+<form  action="prijava.php<?php echo '?id='.$id; ?>" method="post">
+   <?php
+    $user_id = $_SESSION['user_id'];
+    $query = "SELECT p.id FROM prijavljeni p WHERE ((p.user_id = '$user_id') AND (p.destination_id = '$id'))";
+    $result = mysqli_query($link, $query);
+   ?>
+    <?php if(mysqli_num_rows($result) > 0) {
     
-
-<input type="submit" value="PRIJAVI SE" />
+    echo "<input type='submit' name='cancel' value='ODJAVA'>";
+    }
+    else {
+        echo "<input type='submit' name='submit' value='PRIJAVA NA DESTINACIJO'>";
+    }
+?>
 
 
 </form>

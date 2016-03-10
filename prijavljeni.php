@@ -1,20 +1,20 @@
-<?php 
+<?php
 include_once 'header.php';
+include_once 'database.php';
+
+$sql = "SELECT id, title FROM destinations";
+$result = mysqli_query($link, $sql);
+
 ?>
-
-
 <table>
-    <tr>
-        <td><a href="bled.php">BLED</a></td>
-        <td>VELENJE</td>
-        <td>PIRAN</td>
-    </tr>
-    <tr>
-        <td>BLED</td>
-        <td>VELENJE</td>
-        <td>PIRAN</td>
-    </tr>
+<?php
+while ($row = mysqli_fetch_array($result)) {
+    echo "<tr><td><a href=''>" . $row['title'] . "</a></td></tr>";
+}
+?>
+  
 </table>
+    
 <?php
 include_once 'footer.php';
 ?>
