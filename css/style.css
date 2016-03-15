@@ -55,18 +55,8 @@
 	}
 
 	
-	h2.major
-	{
-		position: relative;
-		border-top: solid 5px #e7eae8;
-	}
-
-		h2.major span
-		{
-			background: #fff;
-			position: relative;
-			display: inline-block;
-		}
+	
+		
 	
 	a
 	{
@@ -115,21 +105,6 @@
 		border-top: solid 2px #E7EAE8;
 		margin: 0 0 3em 0;
 	}
-	table{
-		border: 2px solid green;
-		padding: 5px;
-		text-align:center;
-	}
-
-	
-	
-	blockquote
-	{
-		border-left: solid 5px #E7EAE8;
-		padding: 1em 0 1em 1.5em;
-		font-style: italic;
-	}
-	
 	p, ul, ol, dl, table
 	{
 		margin-bottom: 3em;
@@ -236,7 +211,7 @@
 			font-weight: 700;
 			text-transform: uppercase;
 			text-decoration: none;
-			background: #b1ddab;
+			background: #0E5F76;
 			color: #fff;
 			border: 0;
 			line-height: 1em;
@@ -255,7 +230,8 @@
 			input[type="reset"]:hover,
 			.button:hover
 			{
-				background: #c1edbb;
+				background: #FCE38A;
+                color: black;
 			}
 
 			input[type="button"]:active,
@@ -263,32 +239,12 @@
 			input[type="reset"]:active,
 			.button:active
 			{
-				background: #a1cd9b;
+				background: #FCE38A;
+                color: black;
 			}
 		
-			input[type="button"].alt,
-			input[type="submit"].alt,
-			input[type="reset"].alt,
-			.button.alt
-			{
-				background: #c1cac5;
-			}
 
-				input[type="button"].alt:hover,
-				input[type="submit"].alt:hover,
-				input[type="reset"].alt:hover,
-				.button.alt:hover
-				{
-					background: #ccd5d0;
-				}
 				
-				input[type="button"].alt:active,
-				input[type="submit"].alt:active,
-				input[type="reset"].alt:active,
-				.button.alt:active
-				{
-					background: #b1bab5;
-				}
 	
 	/* List */
 
@@ -633,7 +589,7 @@
 					font-family: 'Open Sans Condensed', sans-serif;
 					font-weight: 700;
 					text-transform: uppercase;
-					color: #6b7770;
+					color: #0C2233;
 				}
 			
 				table.default thead
@@ -652,38 +608,7 @@
 
 	/* Box */
 
-		.box
-		{
-		}
-
-			.box.highlight
-			{
-				text-align: center;
-			}
-
-			.box.features
-			{
-			}
-			
-			.box.feature
-			{
-			}
-
-			.box.blog
-			{
-			}
-
-			.box.post
-			{
-			}
-
-			.box.post-summary
-			{
-			}
-
-			.box.page-content
-			{
-			}
+		
 
 /*********************************************************************************/
 /* Icons                                                                         */
@@ -726,27 +651,17 @@
 	#banner-wrapper
 	{
 		position: relative;
-		background-image:			url('images/overlay.png'),	url('images/overlay.png'),	url('../images/banner.jpg');
-		background-position:		top left,					top left,					center center;
+		background-color: #083D56;
+        background-position:		top left,					top left,					center center;
 		background-repeat:			repeat,						repeat,						no-repeat;
 		background-size:			auto,						auto,						cover;
-		z-index: 1;
-	}
-
-	#main-wrapper
-	{
-		background: #fff;
-		border-top: solid 5px #b1ddab;
-		border-bottom: solid 5px #c1cac5;
+		z-index: 1; 
 	}
 	
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header
-	{
-	}
 
 /*********************************************************************************/
 /* Nav                                                                           */
@@ -760,58 +675,6 @@
 /* Banner                                                                        */
 /*********************************************************************************/
 
-	#banner
-	{
-		position: relative;
-		background-color:		rgba(21,28,23,0.85);
-		background-image:		url('images/overlay.png'),	url('images/highlight.png');
-		background-position:	top left,					center center;
-		background-size:		auto,						100% 250%;
-		background-repeat:		repeat,						no-repeat;
-		text-align: center;
-		margin: 0;
-	}
-
-		#banner h2
-		{
-			color: #fff;
-		}
-		
-		#banner p
-		{
-			display: block;
-			font-family: 'Open Sans Condensed', sans-serif;
-			font-weight: 700;
-			text-transform: uppercase;
-			color: #575d59;
-		}
-
-		#banner .button
-		{
-			color: #b4b7b5;
-			background: transparent !important;
-			border: solid 4px #575d59;
-			border-color: rgba(87, 93, 89, 0.35);
-			border-radius: 16px;
-			-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-			-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-			-o-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-			-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-			transition: border-color .2s ease-in-out, color .2s ease-in-out;
-		}
-
-			#banner .button:hover
-			{
-				color: #e4e7e5;
-				border-color: rgba(87, 93, 89, 0.75);
-			}
-
-			#banner .button:active
-			{
-				color: #fff;
-				border-color: rgba(97, 103, 99, 1.0);
-			}
-
 
 /*********************************************************************************/
 /* Main                                                                          */
@@ -819,6 +682,7 @@
 
 	#main
 	{
+        
 	}
 
 /*********************************************************************************/
@@ -834,10 +698,7 @@
 			color: inherit;
 		}
 
-		#footer h2.major span
-		{
-			background: #f2f5f3;
-		}
+		
 
 /*********************************************************************************/
 /* Copyright                                                                     */
@@ -846,10 +707,10 @@
 	#copyright
 	{
 		display: inline-block;
-		background: #e7eae8;
+		background: #0C2233;
 		padding: 0.75em 2em 0.75em 2em;
 		border-radius: 8px;
-		color: #8b9790;
+		color: white;
 	}
 	
 		#copyright a
@@ -866,7 +727,7 @@
 			{
 				border-color: #C1CAC5;
 				border-width: 2px;
-				line-height: 1em;
+				
 			}
 /******NAPAKE in USPEH******/                      
 #error {
@@ -907,16 +768,12 @@ div hr {
 
 /****UREJANJE DESTINACIJ***/
 #destinations {
-    /*border-color: black;
-    border-width: 2px;
-    border-style: solid;*/
+    border: solid 3px #0E5F76;
+    border-radius: 5px;
     width: 100%;    
 }
 
 .destination {    
-    /*border-color: red;
-    border-width: 2px;
-    border-style: solid;*/
     width: 30%;
     float: left;
     margin: 10px 0px 0px 15px;
@@ -967,7 +824,9 @@ div hr {
 
 .ocena a span {
     visibility: hidden;
+    text-decoration: none;
 }
 .ocena a:hover span {
     visibility: visible;
+    text-decoration: none;
 }

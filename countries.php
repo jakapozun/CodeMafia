@@ -6,10 +6,10 @@ $result = mysqli_query($link, $query);
 ?>
 <?php
  if ($_SESSION['admin'] == 1) {
-  echo "<a href='country_add.php'>Dodaj državo</a>"; }
+  echo "<a class='btn btn-success' href='country_add.php'><i class='fa fa-plus'></i> Dodaj državo</a>"; }
       ?>
 
-<table border="1" cellpadding="0" cellspacing="0">
+<table class="table table-condensed">
     <tr>
         <td>ID</td>
         <td>Naslov</td>
@@ -34,9 +34,9 @@ while ($row = mysqli_fetch_array($result)) {
     
     echo '<td>';
              if ($_SESSION['admin'] == 1) {
-    echo '<a href="country_delete.php?id='.$row['id'].'" 
-                onclick="return confirm(\'Ste prepričani?\')">Izbriši</a>';
-    echo ' <a href="country_edit.php?id='.$row['id'].'">Uredi</a>'; }
+    echo '<a class="btn btn-danger" href="country_delete.php?id='.$row['id'].'" 
+                onclick="return confirm(\'Ste prepričani?\')"><i class="fa fa-trash"></i></a>';
+    echo ' <a class="btn btn-primary" href="country_edit.php?id='.$row['id'].'"><i class="fa fa-pencil"></i></a>'; }
     echo '</td>';    
     
     echo '</tr>';

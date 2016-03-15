@@ -41,6 +41,7 @@
 	
 	#main-wrapper
 	{
+        background: #fffff5 !important;
 		border-top-width: 20px;
 		border-bottom-width: 10px;
 	}
@@ -91,21 +92,7 @@
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer
-	{
-		text-align: center;
-		padding: 4em 0 4em 0;
-	}
 	
-		#footer > .row
-		{
-			padding: 2em 0 2em 0;
-		}
-
-	#footer-wrapper h2.major
-	{
-		margin: 0 0 1em 0;
-	}
 
 /*********************************************************************************/
 /* Copyright                                                                     */

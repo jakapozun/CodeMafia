@@ -29,15 +29,16 @@
                 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla%7CMontserrat">
                 <!--<link rel="stylesheet" href="css/screen.css">-->
                 <link rel="stylesheet" href="css/lightbox.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body class="homepage">
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo container">
+				<div>
 					<div>
-						<!--<h1><a href="index.html" id="logo">TXT</a></h1>-->
-						<p>TURISTIKA - najboljše destinacije ta HIP</p>
+					<img src="images/Drawing.png">
 					</div>
 				</div>
 			</header>
@@ -57,8 +58,8 @@
                                                 
                                                 echo '<li><a href="logout.php">Odjava ('.
                                                         $_SESSION['first_name'].')</a></li>';
-                                                if($_SESSION['admin'] == 1) { echo "<a  style='text-decoration:none' href='prijavljeni.php'><b style='color:red;'>ADMIN</b></a>";
-                                                                              echo "<a  style='text-decoration:none' href='sporocila.php'><b style='color:red;'>&nbsp; SPOROČILA</b></a>"; }
+                                                if($_SESSION['admin'] == 1) { echo "<a  style='text-decoration:none' href='prijavljeni.php'><b style='color:#EFD510;'>ADMIN</b></a>";
+                                                                              echo "<a  style='text-decoration:none' href='sporocila.php'><b style='color:#EFD510;'>&nbsp; SPOROČILA</b></a>"; }
                                             }
                                                 
                                             
@@ -69,46 +70,20 @@
 			</nav>
 		
 		<!-- Banner -->
-			<div id="banner-wrapper">
-				<!--<section id="banner">
-					<h2>Welcome to TXT by HTML5 UP</h2>
-					<p>A free responsive site template built on HTML5, CSS3, skel, and some other stuff</p>
-					<a href="#" class="button">Alright let's go</a>
-				</section>-->
+            <div id="banner-wrapper">
+				
 			</div>
 
 		<!-- Main -->
 			<div id="main-wrapper">
 				<div id="main" class="container">
-					<!--<div class="row 200%">
-						<div class="12u">
-							
-							<!-- Highlight 
-								<section class="box highlight">
-									<ul class="special">
-										<li><a href="#" class="icon fa-search"><span class="label">Magnifier</span></a></li>
-										<li><a href="#" class="icon fa-tablet"><span class="label">Tablet</span></a></li>
-										<li><a href="#" class="icon fa-flask"><span class="label">Flask</span></a></li>
-										<li><a href="#" class="icon fa-cog"><span class="label">Cog?</span></a></li>
-									</ul>
-									<header>
-										<h2>A random assortment of icons in circles</h2>
-										<p>And some text that attempts to explain their significance</p>
-									</header>
-									<p>
-										Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu<br />
-										ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus amet pulvinar. Nam nec turpis consequat.
-									</p>
-								</section>
-
-						</div>
-					</div>-->
+				
 					<div class="row 200%">
 						<div class="12u">
 
 							<!-- Features -->
 								<section class="box features">
-									<h2  class="major"><span>Destinacije</span></h2>
+									
 									<div>
                                                                             <?php 
                                                                                 //preverimo za error
