@@ -223,7 +223,7 @@ class PHPMailer
      * Hosts will be tried in order.
      * @var string
      */
-    public $Host = 'localhost';
+    public $Host = 'turistikavelenje.co.nf';
 
     /**
      * The default SMTP server port.

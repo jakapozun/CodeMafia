@@ -105,10 +105,10 @@
                                             $id = $_GET['id'];
                                             $sql = "SELECT DISTINCT u.first_name, u.last_name, d.title FROM users u INNER JOIN prijavljeni p ON u.id = p.user_id INNER JOIN destinations d ON d.id = p.destination_id WHERE p.destination_id = '". $id . "';";
                                             $result = mysqli_query($link, $sql);
-                                            echo "<table class='table table-bordered'><th><b>Ime</b></th><th><b>Priimek</b></th>";
+                                            echo "<table class='table table-bordered'><th><b>Ime</b></th><th><b>Priimek</b></th><th><b>Destinacija</b></th>";
                                             while ($row = mysqli_fetch_array($result)) {
                                                 echo "<tr>";
-                                                echo "<td>" . $row['first_name'] . "</td><td>" . $row['last_name'] . "</td>";
+                                                echo "<td>" . $row['first_name'] . "</td><td>" . $row['last_name'] . "</td><td>" . $row['title'] . "</td>";
                                                 echo "</tr>";
                                             }
                                             echo "</table>"; 

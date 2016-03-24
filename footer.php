@@ -1,4 +1,5 @@
 		<!-- Footer -->
+		
 			<footer id="footer" class="container">
 				<div class="row 200%">
 					<div class="12u">
@@ -34,6 +35,7 @@
 					</div>
 
 			</footer>
+        
                 <script src="js/jquery-1.11.0.min.js"></script>
                 <script src="js/lightbox.js"></script>
 
